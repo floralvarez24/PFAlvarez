@@ -8,12 +8,21 @@
     <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./src/styles.css">
+    <link rel="stylesheet" href="../src/styles.css">
+    <link rel="stylesheet" href="../src/loader.css">
+    
     <title>Pago realizado</title>
 </head>
 <body>
-    <div id="avisoPago" class="pagoExitoso">
-       <h2>¡Felicidades! Compra realizada con éxito</h2> 
+    <div class="contenedor-loader">
+        <div class="loader"></div>
+
     </div>
+    <section>
+        <div id="avisoPago" class="pagoExitoso">
+            <img src="../assets/img/pago-exitoso.png" alt="">
+        </div>
+    </section>
+    <script src="../js/loader.js"></script>
 </body>
 </html>
