@@ -85,9 +85,10 @@ const eliminarDelCarrito = (prodId) => {
 
     carrito.splice(indice, 1) //Le pasamos el indice de mi elemento ITEM y borramos 
     // un elemento 
+    localStorage.removeItem('carrito')
     actualizarCarrito() //LLAMAMOS A LA FUNCION QUE CREAMOS EN EL TERCER PASO. CADA VEZ Q SE 
     //MODIFICA EL CARRITO
-    localStorage.removeItem('carrito')
+    //localStorage.removeItem('carrito')
 }
 
 const actualizarCarrito = () => {
