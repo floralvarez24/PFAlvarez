@@ -75,7 +75,7 @@ fetch('https://fakestoreapi.com/users/1')
             </div>
     
     
-        <a href="index.html" class="btn btn-info btn-block">Seguir comprando</a>
+      
         <a href="pagoExitoso.html" class="btn btn-info btn-block">Pagar</a>
         `
    
