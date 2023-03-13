@@ -86,9 +86,9 @@ const eliminarDelCarrito = (prodId) => {
     carrito.splice(indice, 1) //Le pasamos el indice de mi elemento ITEM y borramos 
     // un elemento 
     localStorage.removeItem('carrito')
-    actualizarCarrito() //LLAMAMOS A LA FUNCION QUE CREAMOS EN EL TERCER PASO. CADA VEZ Q SE 
+    actualizarCarrito() //LLAMAMOS A LA FUNCION CADA VEZ Q SE 
     //MODIFICA EL CARRITO
-    //localStorage.removeItem('carrito')
+    
 }
 
 const actualizarCarrito = () => {
@@ -136,7 +136,7 @@ procesarCompraBtn.addEventListener('click', () => {
     })
    }
     else{
-      location.href="continuar.html"
+      location.href="./pages/procesarPago.html"
     }
 })
 
