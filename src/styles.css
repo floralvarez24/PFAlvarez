@@ -64,7 +64,7 @@ p {
 .precioProducto {
     font-weight: 700;
 }
-.boton-agregar, .iniciarSesion {
+.boton-agregar, .iniciarSesion, .pagoExitoso {
     background-color: royalblue;
     color: white;
     font-size: 18px;
@@ -73,8 +73,8 @@ p {
     border: none;
 }
 
-#boton{
-    font-size: 40px;
+#boton,#avisoPago{
+    font-size: 30px;
     margin-top: 50px;
     display: flex;
     justify-content: center;
