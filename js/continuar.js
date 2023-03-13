@@ -50,7 +50,7 @@ fetch('https://fakestoreapi.com/users/1')
 
                 <div class="inputBox">
                     <span>Tarjetas aceptadas:</span>
-                    <img src="../assets/img/card_img.png" alt="">
+                    <img src="assets/img/card_img.png" alt="">
                 </div>
                 <div class="inputBox">
                     <span>Nombre del titular :</span>
