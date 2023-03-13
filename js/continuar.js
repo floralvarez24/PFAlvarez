@@ -49,10 +49,6 @@ fetch('https://fakestoreapi.com/users/1')
                 <h3 class="title">Información de pago</h3>
 
                 <div class="inputBox">
-                    <span>Tarjetas aceptadas:</span>
-                    <img src="/assets/img/card_img.png" alt="">
-                </div>
-                <div class="inputBox">
                     <span>Nombre del titular :</span>
                     <input type="text" placeholder="mr. john doe"required>
                 </div>
