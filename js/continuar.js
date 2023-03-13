@@ -54,7 +54,7 @@ fetch('https://fakestoreapi.com/users/1')
                 </div>
                 <div class="inputBox">
                     <span> Número de tarjeta de crédito:</span>
-                    <input type="number" value="1111-2222-3333-4444"required>
+                    <input type="text" value="1111-2222-3333-4444" required>
                 </div>
                 <div class="inputBox">
                     <span>Mes de vencimiento :</span>
