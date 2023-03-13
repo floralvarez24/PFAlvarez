@@ -21,23 +21,23 @@ fetch('https://fakestoreapi.com/users/1')
 
                 <div class="inputBox">
                     <span>Nombre:</span>
-                    <input type="text" placeholder= "${res.name.firstname}" required>
+                    <input type="text" value= "${res.name.firstname}" required>
                 </div>
                 <div class="inputBox">
                     <span> Apellido :</span>
-                    <input type="text" placeholder="${res.name.lastname}"required>
+                    <input type="text" value="${res.name.lastname}"required>
                 </div>
                 <div class="inputBox">
                     <span>email :</span>
-                    <input type="email" placeholder="${res.email}"required>
+                    <input type="email" value="${res.email}"required>
                 </div>
                 <div class="inputBox">
                     <span>Direccion :</span>
-                    <input type="text" placeholder="${res.address.street}"required>
+                    <input type="text" value="${res.address.street}"required>
                 </div>
                 <div class="inputBox">
                     <span>ciudad :</span>
-                    <input type="text" placeholder="${res.address.city}"required>
+                    <input type="text" value="${res.address.city}"required>
                 </div>
 
                 
@@ -50,25 +50,25 @@ fetch('https://fakestoreapi.com/users/1')
 
                 <div class="inputBox">
                     <span>Nombre del titular :</span>
-                    <input type="text" placeholder="mr. john doe"required>
+                    <input type="text" value="mr. john doe"required>
                 </div>
                 <div class="inputBox">
                     <span> Número de tarjeta de crédito:</span>
-                    <input type="number" placeholder="1111-2222-3333-4444"required>
+                    <input type="number" value="1111-2222-3333-4444"required>
                 </div>
                 <div class="inputBox">
                     <span>Mes de vencimiento :</span>
-                    <input type="text" placeholder="january"required>
+                    <input type="text" value="january"required>
                 </div>
 
                 <div class="flex">
                     <div class="inputBox">
                         <span> Año de vencimiento  :</span>
-                        <input type="number" placeholder="2022"required>
+                        <input type="number" value="2022"required>
                     </div>
                     <div class="inputBox">
                         <span>CVV :</span>
-                        <input type="text" placeholder="1234"required>
+                        <input type="text" value="1234"required>
                     </div>
                 </div>
 
