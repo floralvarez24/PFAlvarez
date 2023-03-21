@@ -63,16 +63,31 @@ const agregarAlCarrito = (prodId) => {
             if (prod.id === prodId){
                 prod.cantidad++
             }
+            Swal.fire({
+                type:'success',
+                position: 'top-end',
+                title: 'Producto añadido al carrito',
+                showConfirmButton: false,
+                timer: 1500
+              })
         })
     } else { //EN CASO DE QUE NO ESTÉ, AGREGAMOS EL CURSO AL CARRITO
         const item = stockProductos.find((prod) => prod.id === prodId)//Trabajamos con las ID
         //Una vez obtenida la ID, lo que haremos es hacerle un push para agregarlo al carrito
         carrito.push(item)
+        Swal.fire({
+            type: 'success',
+            position: 'top-end',
+            title: 'Producto añadido al carrito',
+            showConfirmButton: false,
+            timer: 1500
+          })
     }
     //Va a buscar el item, agregarlo al carrito y llama a la funcion actualizarCarrito, que recorre
     //el carrito y se ve.
     actualizarCarrito() //LLAMAMOS A LA FUNCION QUE CREAMOS EN EL TERCER PASO. CADA VEZ Q SE 
     //MODIFICA EL CARRITO
+
 }
 //agregarAlCarrito(1) //Le pasamos el ID por parametro. Tenemos que asigarle como evento esta funcion al boton
 //con el id de su producto correspondiente
@@ -115,7 +130,7 @@ const actualizarCarrito = () => {
 
     })
    
-    contadorCarrito.innerText = carrito.length // actualizamos con la longitud del carrito.
+    contadorCarrito.innerText =carrito.reduce((acc, prod) => acc + prod.cantidad, 0) // actualizamos con la longitud del carrito.
   
     console.log(carrito)
     precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.cantidad * prod.precio, 0)

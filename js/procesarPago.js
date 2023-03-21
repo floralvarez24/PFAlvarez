@@ -1,8 +1,9 @@
-const iniciarSesion= document.getElementById('boton')
+const procesarPago= document.getElementById('boton')
 const inicio= document.getElementById('usuario')
 
-iniciarSesion.addEventListener('click', ()=> {
-fetch('https://fakestoreapi.com/users/1')
+
+procesarPago.addEventListener('click', ()=> {
+fetch('https://jsonplaceholder.typicode.com/users/1')
         .then((data) => {
            return data.json();
         })
@@ -21,12 +22,9 @@ fetch('https://fakestoreapi.com/users/1')
 
                 <div class="inputBox">
                     <span>Nombre:</span>
-                    <input type="text" value= "${res.name.firstname}" required>
+                    <input type="text" value= "${res.name}" required>
                 </div>
-                <div class="inputBox">
-                    <span> Apellido :</span>
-                    <input type="text" value="${res.name.lastname}"required>
-                </div>
+                
                 <div class="inputBox">
                     <span>email :</span>
                     <input type="email" value="${res.email}"required>
@@ -50,7 +48,7 @@ fetch('https://fakestoreapi.com/users/1')
 
                 <div class="inputBox">
                     <span>Nombre del titular :</span>
-                    <input type="text" value="mr. john doe"required>
+                    <input type="text" value="${res.name}"required>
                 </div>
                 <div class="inputBox">
                     <span> Número de tarjeta de crédito:</span>
@@ -64,11 +62,11 @@ fetch('https://fakestoreapi.com/users/1')
                 <div class="flex">
                     <div class="inputBox">
                         <span> Año de vencimiento  :</span>
-                        <input type="number" value="2022"required>
+                        <input type="number" value="2025"required>
                     </div>
                     <div class="inputBox">
                         <span>CVV :</span>
-                        <input type="text" value="1234"required>
+                        <input type="password" value="123"required>
                     </div>
                 </div>
 
